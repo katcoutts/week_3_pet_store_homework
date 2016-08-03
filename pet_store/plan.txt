@@ -1,0 +1,61 @@
+BUILDING SIMPLE PET SHOP
+
+
+Relationship between pet store and pet is many to one. A pet store has many pets but a pet is only in one pet store.
+Always model in the singular.
+
+PetStore:
+Name 
+ID
+
+Pet:
+Name
+Type 
+ID
+
+1 Initial setup
+- DB
+-Directory
+
+NEED TO REMEMBER TO RUN THIS WHICH IS SETTING UP THE SCAFFOLDING ONCE YOU'VE CREATED THE DATABASE AND CREATED THE TABLES.
+psql -d pet_store -f db/pet_store.sql
+
+2 Construct basic models
+- PetStore
+- Pet
+- In each class we'll create methods that allow us to talk to the database
+- Create a console script
+
+3 Write relationship methods (ie things like a method so you could get the names of the albums an artist has)
+- store.pets()
+- pet.stores()
+
+
+HOMEWORK
+
+Pet Store
+
+You have been asked to create an app that will allow the owner of a Pet Store chain manage their stores and stock(pets).
+
+They would like to be able to:
+
+Create and Save Pet Stores
+Create and Save Pets
+
+List all the pets of a store
+
+Show the store a pet belongs to
+Every pet store should have a name, a 1 line address and a stock type e.g "exotic". Pets should have a name, and a type.
+
+Additionally it would be nice to be able to:
+
+Find Pet Stores by their ID
+Edit Pet Stores
+Delete Pet Stores
+List All Pet Stores
+
+Find Pets by their ID
+
+Edit Pets
+Delete Pets
+List All Pets
